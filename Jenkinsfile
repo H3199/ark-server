@@ -16,14 +16,14 @@ pipeline {
         stage('Pull Docker Images') {
             steps {
                 echo "Pulling Docker images..."
-                sh 'docker-compose pull'
+                sh 'docker compose pull'
             }
         }
 
         stage('Deploy ARK Server') {
             steps {
                 echo "Deploying ARK server with Docker Compose..."
-                sh "docker-compose up -d"
+                sh "docker compose up -d"
             }
         }
     }
