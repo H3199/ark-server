@@ -6,7 +6,7 @@ services:
     container_name: ark_server
     image: hermsi/ark-server:latest
     volumes:
-      - ${HOME}/ark-server:/app
+      - /home/eero/ark-server-data:/app
       - /backup/ark-server-backups:/home/steam/ARK-Backups
     environment:
       - SESSION_NAME=testi
