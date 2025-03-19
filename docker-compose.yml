@@ -11,8 +11,8 @@ services:
     environment:
       - SESSION_NAME=testi
       - SERVER_MAP=TheIsland
-      - SERVER_PASSWORD=${{ secrets.SERVER_PASSWORD }}
-      - ADMIN_PASSWORD=${{secrets.ADMIN_PASSWORD }}
+      - SERVER_PASSWORD=$${{ secrets.SERVER_PASSWORD }}
+      - ADMIN_PASSWORD=$${{secrets.ADMIN_PASSWORD }}
       - MAX_PLAYERS=10
       - UPDATE_ON_START=false
       - BACKUP_ON_STOP=false
