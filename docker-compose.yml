@@ -9,8 +9,8 @@ services:
       - /home/eero/ark-server-data:/app
       - /backup/ark-server-backups:/home/steam/ARK-Backups
     environment:
-      - SESSION_NAME=testi
-      - SERVER_MAP=TheIsland
+      - SESSION_NAME=liskojenyö
+      - SERVER_MAP=Ragnarok
       - SERVER_PASSWORD=${SERVER_PASSWORD}
       - ADMIN_PASSWORD=${ADMIN_PASSWORD}
       - MAX_PLAYERS=10
